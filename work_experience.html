@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work Experience</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="personal_info.html">Personal Info</a>
+        <a href="education.html">Education</a>
+        <a href="work_experience.html">Work Experience</a>
+        <a href="skills.html">Skills</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <!-- Work Experience Section -->
+    <section id="work-experience">
+        <h2>Work Experience</h2>
+
+        <!-- Form for adding work experience -->
+        <form id="workExperienceForm">
+            <label for="company">Company:</label>
+            <input type="text" id="company" name="company" required><br>
+
+            <label for="role">Role:</label>
+            <input type="text" id="role" name="role" required><br>
+
+            <label for="start_date">Start Date:</label>
+            <input type="date" id="start_date" name="start_date" required><br>
+
+            <label for="end_date">End Date:</label>
+            <input type="date" id="end_date" name="end_date" required><br>
+
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" required></textarea><br>
+
+            <button type="submit">Add Experience</button>
+        </form>
+
+        <!-- Display saved work experience info -->
+        <h3>Your Work Experience:</h3>
+        <div id="workExperienceDisplay"></div>
+    </section>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>

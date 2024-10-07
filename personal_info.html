@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Information</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="personal_info.html">Personal Info</a>
+        <a href="education.html">Education</a>
+        <a href="work_experience.html">Work Experience</a>
+        <a href="skills.html">Skills</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <!-- Personal Information Section -->
+    <section id="personal-info">
+        <h2>Personal Information</h2>
+
+        <!-- Form for adding personal information -->
+        <form id="personalInfoForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="contact">Contact:</label>
+            <input type="text" id="contact" name="contact" required><br>
+
+            <label for="bio">Bio:</label>
+            <textarea id="bio" name="bio" required></textarea><br>
+
+            <button type="submit">Save</button>
+        </form>
+
+        <!-- Display saved personal info -->
+        <h3>Your Information:</h3>
+        <div id="personalInfoDisplay"></div>
+    </section>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
+

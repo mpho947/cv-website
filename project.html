@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="personal_info.html">Personal Info</a>
+        <a href="education.html">Education</a>
+        <a href="work_experience.html">Work Experience</a>
+        <a href="skills.html">Skills</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+
+        <!-- Form for adding projects -->
+        <form id="projectsForm">
+            <label for="project_name">Project Name:</label>
+            <input type="text" id="project_name" name="project_name" required><br>
+
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" required></textarea><br>
+
+            <button type="submit">Add Project</button>
+        </form>
+
+        <!-- Display saved projects -->
+        <h3>Your Projects:</h3>
+        <div id="projectsDisplay"></div>
+    </section>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
